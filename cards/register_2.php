@@ -133,19 +133,19 @@
           </div>
           <div class="col-12">
             <div class="form-check d-inline mr-5">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="149" checked>
               <label class="form-check-label" for="exampleRadios1">
                 149
               </label>
             </div>
             <div class="form-check d-inline mr-5">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="349">
               <label class="form-check-label" for="exampleRadios2">
                 349
               </label>
             </div>
             <div class="form-check d-inline mr-5">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="549">
               <label class="form-check-label" for="exampleRadios3">
                 549
               </label>
@@ -438,8 +438,8 @@
             <div class="form-group">
               <label for="country">Country</label>
               <select class="form-control" id="country" name="country" autocomplete="off" required>
-                <option value="Philippines">Philippines</option>
-                <option value="United States">United States</option>
+                <option value="PH">Philippines</option>
+                <!-- <option value="United States">United States</option>
                 <option value="United Kingdom">United Kingdom</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -679,7 +679,7 @@
                 <option value="Western Sahara">Western Sahara</option>
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
-                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Zimbabwe">Zimbabwe</option> -->
               </select>
             </div>
           </div>
@@ -766,6 +766,12 @@
                 </select>
             </div>
           </div>
+
+          <div class="col-4">
+            <div class="form-group">
+               <button type="button" class="btn btn-primary btn-block" id="subscribe" style="margin-top: 31px;">Subscribe</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
@@ -825,6 +831,8 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="/cards/js/subscription-payment.js"></script>
 <!--
     <script>
     function recaptchaCallback() {
