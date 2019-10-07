@@ -20,9 +20,9 @@
     $secretAPIKey = 'sk-fzukI3GXrzNIUyvXY3n16cji8VTJITfzylz5o5QzZMC';
     $secretAPIKey_Base64 = base64_encode($secretAPIKey);
 
-    $successURL = '';
-    $failureURL = 'http://www.google.com';
-    $cancelURL = 'http://www.bing.com';
+    $successURL = 'http://test.mywhitecard.ph/_subs/subscribe.php';
+    $failureURL = 'http://test.mywhitecard.ph/failure.php';
+    $cancelURL = 'http://test.mywhitecard.ph/cancel.php';
 
     $paymentTokenId = '';
     $customerId = '';
@@ -95,6 +95,8 @@
             $zipCode = $_POST['zipCode'];
             $countryCode = $_POST['countryCode'];
             
+            $subscriptionPlan = $_POST['subscriptionPlan'];
+
             $data = array(
                 'firstName' => $firstName,
                 'middleName' => $middleName,
@@ -190,6 +192,12 @@
                 $responseCardVault = json_decode($result, true);
                 $cardTokenId = $responseCardVault['cardTokenId'];
                 $verificationUrl = $responseCardVault['verificationUrl'];
+
+                session_start();
+                $_SESSION['cardTokenId'] = $cardTokenId;
+                $_SESSION['customerId'] = $customerId;
+                $_SESSION['description'] = 'My description';
+                $_SESSION['amount'] = $subscriptionPlan;
 
                 echo $verificationUrl;
 

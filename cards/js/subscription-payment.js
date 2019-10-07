@@ -71,7 +71,6 @@ $(function() {
             console.log('(textStatus): ' + textStatus);
             console.log('(xhr): ' + xhr);
 
-            alert(response);
             window.location.href = response;
         }).fail(function(xhr, textStatus, errorThrown) {
             console.log('FAIL');

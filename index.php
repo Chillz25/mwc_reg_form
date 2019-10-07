@@ -1,75 +1,28 @@
-<?php
-
-  require '_lib/c/flight/Flight.php';
-
-  Flight::route('/', function(){
-    $rootPath = '';
-    require_once('pages/main.php');
-  });
-
-  Flight::route('/main', function(){
-    $rootPath = '';
-    require_once('pages/main.php');
-  });
-
-  // Flight::route('/welcome', function(){
-  //   $rootPath = '';
-  //   require_once('cards/welcome.php');
-  // });
-
-  Flight::route('/about', function(){
-    $rootPath = '';
-    require_once('pages/about.php');
-  });
-
-  Flight::route('/form', function(){
-    $rootPath = '';
-    require_once('pages/paymaya-form.php');
-  });
-
-  Flight::route('/contact', function(){
-    $rootPath = '';
-    require_once('pages/contact.php');
-  });
-
-  Flight::route('/faq', function(){
-    $rootPath = '';
-    require_once('pages/faq.php');
-  });
-
-  Flight::route('/privacy', function(){
-    $rootPath = '';
-    require_once('pages/privacy.php');
-  });
-
-  Flight::route('/terms', function(){
-    $rootPath = '';
-    require_once('pages/terms.php');
-  });
-
-  Flight::route('/articles', function(){
-    $rootPath = '';
-    require_once('pages/articles.php');
-  });
-
-  Flight::route('/career', function(){
-    $rootPath = '';
-    require_once('pages/career.php');
-  });
-
-  Flight::route('/qrcode', function(){
-    $rootPath = '';
-    require_once('pages/qrcode.php');
-  });
-
-  Flight::route('/app', function(){
-    $rootPath = '';
-    require_once('pages/app.php');
-  });
-
-  Flight::route('/signout', function(){
-    $rootPath = '';
-    require_once('pages/signout.php');
-  });
-
-  Flight::start();
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="subs.js"></script>
+        <title>Test Page | Subscription</title>
+        <style>
+            body {
+                background-color: #f7f7f7;
+            }
+            body > div > h1 {
+                margin-top: 100px;
+                color: #34495e;
+            }
+            body > div > button {
+                margin-top: 60px;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="text-center">
+            <h1>Subscription Test</h1>
+            <button type="button" class="btn btn-primary" id="goToSubs">Proceed to subscription</button>
+        </div>
+    </body>
+</html>
