@@ -22,6 +22,7 @@
     /**
      * Subscription: Customer subscription endpoint.
      */
+    date_default_timezone_set('Hongkong');
     $datetime = new DateTime('tomorrow');
 
     session_start();
@@ -32,10 +33,10 @@
     $interval = 'DAY';
     $intervalCount = 30;
     $startDate = $datetime->format('Y-m-d');
-    
+
     $customerId = $_SESSION['customerId'];
     $cardTokenId = $_SESSION['cardTokenId'];
-    
+
     $data = array(
         'description' => $description,
         'totalAmount' =>
