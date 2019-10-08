@@ -151,6 +151,21 @@
               </label>
             </div>
           </div>
+          <br><br>
+          <div class="col-12">
+            <div class="form-check d-inline mr-5">
+              <input class="form-check-input" type="radio" name="interval" id="interval1" value="monthly" checked>
+              <label class="form-check-label" for="interval1">
+                Monthly
+              </label>
+            </div>
+            <div class="form-check d-inline mr-5">
+              <input class="form-check-input" type="radio" name="interval" id="interval2" value="yearly">
+              <label class="form-check-label" for="interval2">
+                Annual
+              </label>
+            </div>
+          </div>
           <div class="col-12">
             <hr>
             <h4 class="reg_header"><span class="form-step">2</span> Basic Information </h4>
