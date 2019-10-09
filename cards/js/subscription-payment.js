@@ -4,8 +4,8 @@ $(function() {
     let firstName = $('#fname');
     let middleName = '';
     let lastName = $('#lname');
-    let birthday = '2019-10-03';
-    let sex = 'M';
+    let birthday = '0001-01-01';
+    let sex = 'U';
     let email = $('#email');
     let password = $('#password');
     let contactNo = $('#contact_num');
@@ -29,8 +29,8 @@ $(function() {
 
     buttonSubscribe.on('click', function(e) {
         let selectedSubscriptionPlan = $('input[name="exampleRadios"]:checked').val();
-
-        /* Create payment token */
+        let selectedSubscriptionInterval = $('input[name="interval"]:checked').val();
+        
         $.ajax({
             async: true,
             type: 'POST',
@@ -58,11 +58,12 @@ $(function() {
                 zipCode: $.trim(zipCode.val()),
                 countryCode: $.trim(countryCode.val()),
                 /* Subscription Option */
-                subscriptionPlan: $.trim(selectedSubscriptionPlan)
+                subscriptionPlan: $.trim(selectedSubscriptionPlan),
+                subscriptionPlanInterval: $.trim(selectedSubscriptionInterval)
             },
             beforeSend: function() {
                 // Loader here.
-                console.log('(beforeSend) : Subscribing...');
+                //console.log('(beforeSend) : Subscribing...');
             }
         }).done(function(response, textStatus, xhr) {
             // Place error handler here.

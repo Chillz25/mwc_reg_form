@@ -154,13 +154,13 @@
           <br><br>
           <div class="col-12">
             <div class="form-check d-inline mr-5">
-              <input class="form-check-input" type="radio" name="interval" id="interval1" value="monthly" checked>
+              <input class="form-check-input" type="radio" name="interval" id="monthly" value="30" checked>
               <label class="form-check-label" for="interval1">
                 Monthly
               </label>
             </div>
             <div class="form-check d-inline mr-5">
-              <input class="form-check-input" type="radio" name="interval" id="interval2" value="yearly">
+              <input class="form-check-input" type="radio" name="interval" id="yearly" value="365">
               <label class="form-check-label" for="interval2">
                 Annual
               </label>
