@@ -39,7 +39,7 @@
         <h2> Account </h2>
         <hr>
         <div class="row">
-          <div class="col-3 text-center">
+          <div class="col-3">
             <h5> MEMBERSHIP & BILLING </h5>
             <button type="button" class="btn btn-dark">Cancel Membership</button>
           </div>

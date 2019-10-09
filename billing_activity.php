@@ -70,7 +70,7 @@
 
         <div class="row text-center border-bottom">
           <div class="col text-left">
-            27/09/19
+            <a href="print_invoice.php" target="_blank">27/09/19</a>
           </div>
           <div class="col">
             My Description
@@ -88,7 +88,7 @@
 
         <div class="row text-center border-bottom">
           <div class="col text-left">
-            27/09/19
+            <a href="print_invoice.php" target="_blank">27/09/19</a>
           </div>
           <div class="col">
             My Description
@@ -106,7 +106,7 @@
 
         <div class="row text-center border-bottom">
           <div class="col text-left">
-            27/09/19
+            <a href="print_invoice.php" target="_blank">27/09/19</a>
           </div>
           <div class="col">
             My Description
@@ -124,7 +124,7 @@
 
         <div class="row text-center border-bottom">
           <div class="col text-left">
-            27/09/19
+            <a href="print_invoice.php" target="_blank">27/09/19</a>
           </div>
           <div class="col">
             My Description
