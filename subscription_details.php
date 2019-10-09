@@ -39,13 +39,13 @@
         <h2> Account </h2>
         <hr>
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 text-center">
             <h5> MEMBERSHIP & BILLING </h5>
-            <button type="button" class="btn btn-dark btn-sm">Cancel Membership</button>
+            <button type="button" class="btn btn-dark">Cancel Membership</button>
           </div>
           <div class="col">
             1234 - 4568 - 7854
-            <span class="float-right"><a href="#">Update payment info </a></span><br>
+            <span class="float-right"><a href="update_payment_info.php"> Update payment info </a></span><br>
             <span class="float-right"><a href="billing_activity.php">Billing details</a></span>
           </div>
         </div>
@@ -56,7 +56,7 @@
           </div>
           <div class="col">
             LUXURY PLAN
-            <span class="float-right"><a href="#"> Change plan </a></span><br>
+            <span class="float-right"><a href="change_plan.php"> Change plan </a></span><br>
           </div>
         </div>
 

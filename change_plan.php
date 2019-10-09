@@ -19,11 +19,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="main.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Account
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,12 +35,30 @@
         </div>
       </nav>
 
-      <div class="p-5 text-center">
-        <h1> Welcome! </h1>
+      <div class="container p-5">
+        <h2> Change Plan </h2>
+        <hr>
+        <div class="row text-center">
+          <div class="col border p-3 m-3">
+            <h3> ELITE </h3>
+            <h5> PHP 149 </h5>
+            <button type="button" class="btn btn-primary mt-5" disabled> SUBSCRIBE </button>
+          </div>
+          <div class="col border p-3 m-3">
+            <h3> PREMIUM </h3>
+            <h5> PHP 349 </h5>
+
+            <button type="button" class="btn btn-danger mt-5"> CANCEL </button> <br>
+            <small> Current Subscription</small>
+          </div>
+          <div class="col border p-3 m-3">
+            <h3> LUXURY </h3>
+            <h5> PHP 549 </h5>
+            <button type="button" class="btn btn-primary mt-5" disabled> SUBSCRIBE </button>
+          </div>
+        </div>
+
       </div>
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
